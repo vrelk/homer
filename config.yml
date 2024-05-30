@@ -2,16 +2,16 @@
 # Homepage configuration
 # See https://fontawesome.com/v5/search for icons options
 
-title: "Demo dashboard"
+title: "Vrelk Industries"
 subtitle: "Homer"
 logo: "logo.png"
 # icon: "fas fa-skull-crossbones" # Optional icon
 
 header: true
-footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # set false if you want to hide it.
+footer: false
 
 # Optional theme customization
-theme: default
+theme: dark
 colors:
   light:
     highlight-primary: "#3367d6"
@@ -43,43 +43,111 @@ colors:
 # Optional message
 message:
   #url: https://b4bz.io
-  style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
-  title: "Demo !"
-  icon: "fa fa-grin"
-  content: "This is a dummy homepage demo. <br /> Find more information on <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
+  #style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+  #title: "Demo !"
+  #icon: "fa fa-grin"
+  #content: "This is a dummy homepage demo. <br /> Find more information on <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
 
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
-  - name: "Contribute"
-    icon: "fab fa-github"
-    url: "https://github.com/bastienwirtz/homer"
-    target: "_blank" # optional html a tag target attribute
+  #- name: "Contribute"
+  #  icon: "fab fa-github"
+  #  url: "https://github.com/bastienwirtz/homer"
+  #  target: "_blank" # optional html a tag target attribute
   - name: "Wiki"
     icon: "fas fa-book"
-    url: "https://www.wikipedia.org/"
+    url: "https://wiki.vrelk.com/"
+  - name: "YouTube"
+    icon: "fab fa-youtube"
+    url: "https://youtube.com"
+  - name: "Netflix"
+    url: "https://netflix.com"
+  - name: "Paramount+"
+    url: "https://paramountplus.com"
   # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
   # see url field and assets/additional-page.yml.dist used in this example:
   #- name: "another page!"
   #  icon: "fas fa-file-alt"
   #  url: "#additional-page" 
 
+
+# For icons, check https://github.com/walkxcode/Dashboard-Icons
+# Use https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/****.png for the image link
+
 # Services
 # First level array represent a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
-  - name: "Applications"
-    icon: "fas fa-cloud"
+  - name: "Network"
+    #logo:
     items:
-      - name: "Awesome app"
-        logo: "assets/tools/sample.png"
-        subtitle: "Bookmark example"
-        tag: "app"
-        keywords: "self hosted reddit"
-        url: "https://www.reddit.com/r/selfhosted/"
+      - name: "Netbox"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/netbox.png"
+        url: "https://netbox.vrelk.net/"
+        
+      - name: "Wazuh"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/wazuh.png"
+        url: "https://wazuh.vrelk.net/"
+        
+      - name: "AWX"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/awx.png"
+        url: "https://awx.vrelk.net/"
+        
+      - name: "Cyber Panel"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/cpanel.png"
+        url: "https://panel.vrelk.com/"
+        
+      - name: "LibreNMS"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/librenms.png"
+        url: "http://192.168.71.36/"
+
+
+  - name: "DNS"
+    logo: "https://cdn.jsdelivr.net/gh/vrelk/homer@config/icons/techdns.png"
+    items:
+      - name: "Hidden Master"
+        logo: "https://cdn.jsdelivr.net/gh/vrelk/homer@config/icons/techdns.png"
+        subtitle: "Location: Work"
+        tag: "dns"
+        keywords: "technitium techdns dns"
+        url: "http://192.168.71.32/"
         target: "_blank" # optional html a tag target attribute
-      - name: "Another one"
-        logo: "assets/tools/sample2.png"
-        subtitle: "Another application"
-        tag: "app"
-        url: "#"
+        
+      - name: "Forwarder 2"
+        logo: "https://cdn.jsdelivr.net/gh/vrelk/homer@config/icons/techdns.png"
+        subtitle: "Location: Work"
+        tag: "dns"
+        keywords: "technitium techdns dns"
+        url: "http://192.168.71.17/"
+        
+        target: "_blank"
+
+      - name: "Forwarder 3"
+        logo: "https://cdn.jsdelivr.net/gh/vrelk/homer@config/icons/techdns.png"
+        subtitle: "Location: Home"
+        tag: "dns"
+        keywords: "technitium techdns dns"
+        url: "https://192.168.1.5/"
+        target: "_blank"
+
+
+  - name: "Virtualization"
+    icon: "fas fa-server"
+    items:
+        - name: "Proxmox - Office"
+          logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png"
+          url: "https://pve.vrelk.net:8006"
+          hide_decimals: true # removes decimals from stats values.
+          hide: [] # hides information. Possible values are "vms", "vms_total", "lxcs", "lxcs_total", "disk", "mem" and "cpu".
+          small_font_on_small_screens: true # uses small font on small screens (like mobile)
+          small_font_on_desktop: true # uses small font on desktops (just in case you're showing much info)
+
+        - name: "ESXi - VAX Cave"
+          logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/vmware-esxi.png"
+          url: "https://10.255.89.210"
+
+        - name: "Linode"
+          icon: "fab fa-linode"
+          url: "https://login.linode.com/login"
+          
