@@ -85,6 +85,10 @@ services:
       - name: "Netbox"
         logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/netbox.png"
         url: "https://netbox.vrelk.net/"
+
+      - name: "phpIPAM"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/phpipam.png"
+        url: "https://ipam.vrelk.net/"
         
       - name: "Wazuh"
         logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/wazuh.png"
