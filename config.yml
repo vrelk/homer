@@ -154,4 +154,11 @@ services:
         - name: "Linode"
           icon: "fab fa-linode"
           url: "https://login.linode.com/login"
-          
+
+        - name: "Landscape"
+          logo: "https://cdn.jsdelivr.net/gh/vrelk/homer@config/icons/landscape.png"
+          url: "https://landscape.vrelk.net"
+
+        - name: "Jenkins"
+          logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/jenkins.svg"
+          url: "https://jenkins.vrelk.net"
