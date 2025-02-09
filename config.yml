@@ -147,6 +147,14 @@ services:
           small_font_on_small_screens: true # uses small font on small screens (like mobile)
           small_font_on_desktop: true # uses small font on desktops (just in case you're showing much info)
 
+        - name: "Proxmox - Home (Old)"
+          logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png"
+          url: "https://192.168.0.3:8006"
+
+        - name: "Proxmox - Home (New)"
+          logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png"
+          url: "https://192.168.1.47:8006"
+          
         - name: "ESXi - VAX Cave"
           logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/vmware-esxi.png"
           url: "https://10.255.89.210"
