@@ -81,6 +81,7 @@ links:
 services:
   - name: "Network"
     #logo:
+    icon: fas fa-network-wired
     items:
       - name: "Netbox"
         logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/netbox.png"
@@ -135,6 +136,21 @@ services:
         url: "https://192.168.1.5/"
         target: "_blank"
 
+  - name: "Code"
+    icon: fab fa-git-alt
+    items:
+      - name: "Gitea"
+        type: Gitea
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/gitea.svg"
+        url: "https://git.vrelk.net"
+
+      - name: Gist
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/opengist.svg"
+        url: "https://gist.vrelk.net"
+
+      - name: ByteStash
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/bytestash.svg"
+        url: "https://stash.vrelk.net"
 
   - name: "Virtualization"
     icon: "fas fa-server"
