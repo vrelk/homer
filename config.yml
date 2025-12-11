@@ -125,7 +125,6 @@ services:
         tag: "dns"
         keywords: "technitium techdns dns"
         url: "http://192.168.71.17/"
-        
         target: "_blank"
 
       - name: "Forwarder 3"
@@ -135,6 +134,11 @@ services:
         keywords: "technitium techdns dns"
         url: "https://192.168.1.5/"
         target: "_blank"
+
+      - name: "Open WebUI"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/open-webui.svg"
+        subtitle: "Location: Home"
+        url: "https://openwebui.vrelk.net/"
 
   - name: "Code"
     icon: fab fa-git-alt
@@ -157,12 +161,12 @@ services:
     items:
         - name: "Proxmox - Office"
           logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png"
-          url: "https://pve.vrelk.net:8006"
-          hide_decimals: true # removes decimals from stats values.
-          hide: [] # hides information. Possible values are "vms", "vms_total", "lxcs", "lxcs_total", "disk", "mem" and "cpu".
-          small_font_on_small_screens: true # uses small font on small screens (like mobile)
-          small_font_on_desktop: true # uses small font on desktops (just in case you're showing much info)
+          url: "https://192.168.71.5:8006"
 
+        - name: "Proxmox - Office (New)"
+          logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png"
+          url: "https://192.168.71.6:8006"
+          
         - name: "Proxmox - Home (Old)"
           logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png"
           url: "https://192.168.0.3:8006"
@@ -171,9 +175,9 @@ services:
           logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png"
           url: "https://192.168.1.47:8006"
           
-        - name: "ESXi - VAX Cave"
-          logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/vmware-esxi.png"
-          url: "https://10.255.89.210"
+        - name: "Proxmox Backup Server"
+          logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png"
+          url: "https://192.168.71.9:8007"
 
         - name: "Linode"
           icon: "fab fa-linode"
