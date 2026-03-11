@@ -2,191 +2,146 @@
 # Homepage configuration
 # See https://fontawesome.com/v5/search for icons options
 
-title: "Vrelk Industries"
-subtitle: "Homer"
-logo: "logo.png"
-# icon: "fas fa-skull-crossbones" # Optional icon
-
+title: Vrelk Industries
+subtitle: Homer
+logo: logo.png
 header: true
-footer: false
-
-# Optional theme customization
-theme: dark
 colors:
   light:
-    highlight-primary: "#3367d6"
-    highlight-secondary: "#4285f4"
-    highlight-hover: "#5a95f5"
-    background: "#f5f5f5"
-    card-background: "#ffffff"
-    text: "#363636"
-    text-header: "#ffffff"
-    text-title: "#303030"
-    text-subtitle: "#424242"
+    highlight-primary: '#3367d6'
+    highlight-secondary: '#4285f4'
+    highlight-hover: '#5a95f5'
+    background: '#f5f5f5'
+    card-background: '#ffffff'
+    text: '#363636'
+    text-header: '#ffffff'
+    text-title: '#303030'
+    text-subtitle: '#424242'
     card-shadow: rgba(0, 0, 0, 0.1)
-    link: "#3273dc"
-    link-hover: "#363636"
+    link: '#3273dc'
+    link-hover: '#363636'
   dark:
-    highlight-primary: "#3367d6"
-    highlight-secondary: "#4285f4"
-    highlight-hover: "#5a95f5"
-    background: "#131313"
-    card-background: "#2b2b2b"
-    text: "#eaeaea"
-    text-header: "#ffffff"
-    text-title: "#fafafa"
-    text-subtitle: "#f5f5f5"
+    highlight-primary: '#3367d6'
+    highlight-secondary: '#4285f4'
+    highlight-hover: '#5a95f5'
+    background: '#131313'
+    card-background: '#2b2b2b'
+    text: '#eaeaea'
+    text-header: '#ffffff'
+    text-title: '#fafafa'
+    text-subtitle: '#f5f5f5'
     card-shadow: rgba(0, 0, 0, 0.4)
-    link: "#3273dc"
-    link-hover: "#ffdd57"
-
-# Optional message
-message:
-  #url: https://b4bz.io
-  #style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
-  #title: "Demo !"
-  #icon: "fa fa-grin"
-  #content: "This is a dummy homepage demo. <br /> Find more information on <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
-
-# Optional navbar
-# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+    link: '#3273dc'
+    link-hover: '#ffdd57'
+columns: auto
+connectivityCheck: true
+theme: dark
 links:
-  #- name: "Contribute"
-  #  icon: "fab fa-github"
-  #  url: "https://github.com/bastienwirtz/homer"
-  #  target: "_blank" # optional html a tag target attribute
-  - name: "Wiki"
-    icon: "fas fa-book"
-    url: "https://wiki.vrelk.com/"
-  - name: "YouTube"
-    icon: "fab fa-youtube"
-    url: "https://youtube.com"
-  - name: "Netflix"
-    url: "https://netflix.com"
-  - name: "Paramount+"
-    url: "https://paramountplus.com"
-  # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
-  # see url field and assets/additional-page.yml.dist used in this example:
-  #- name: "another page!"
-  #  icon: "fas fa-file-alt"
-  #  url: "#additional-page" 
-
-
-# For icons, check https://github.com/walkxcode/Dashboard-Icons
-# Use https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/****.png for the image link
-
-# Services
-# First level array represent a group.
-# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+  - name: Wiki
+    icon: fas fa-book
+    url: https://wiki.vrelk.com/
+  - name: YouTube
+    icon: fab fa-youtube
+    url: https://youtube.com
+  - name: Netflix
+    url: https://netflix.com
+  - name: Paramount+
+    url: https://paramountplus.com
 services:
-  - name: "Network"
-    #logo:
+  - name: Network
     icon: fas fa-network-wired
     items:
-      - name: "Netbox"
-        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/netbox.png"
-        url: "https://netbox.vrelk.net/"
-
-      - name: "phpIPAM"
-        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/phpipam.png"
-        url: "https://ipam.vrelk.net/"
-        
-      - name: "Wazuh"
-        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/wazuh.png"
-        url: "https://wazuh.vrelk.net/"
-        
-      - name: "AWX"
-        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/awx.png"
-        url: "https://awx.vrelk.net/"
-        
-      - name: "Cyber Panel"
-        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/cpanel.png"
-        url: "https://panel.vrelk.com/"
-        
-      - name: "LibreNMS"
-        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/librenms.png"
-        url: "http://192.168.71.36/"
-
-
-  - name: "DNS"
-    logo: "https://cdn.jsdelivr.net/gh/vrelk/homer@config/icons/techdns.png"
+      - name: Netbox
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/netbox.png
+        url: https://netbox.vrelk.net/
+      - name: phpIPAM
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/phpipam.png
+        url: https://ipam.vrelk.net/
+      - name: Wazuh
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/wazuh.png
+        url: https://wazuh.vrelk.net/
+      - name: AWX
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/awx.png
+        url: https://awx.vrelk.net/
+      - name: Cyber Panel
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/cpanel.png
+        url: https://panel.vrelk.com/
+      - name: LibreNMS
+        url: http://192.168.71.36/
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/librenms.svg
+  - name: DNS
+    logo: https://cdn.jsdelivr.net/gh/vrelk/homer@config/icons/techdns.png
     items:
-      - name: "Hidden Master"
-        logo: "https://cdn.jsdelivr.net/gh/vrelk/homer@config/icons/techdns.png"
-        subtitle: "Location: Work"
-        tag: "dns"
-        keywords: "technitium techdns dns"
-        url: "http://192.168.71.32/"
-        target: "_blank" # optional html a tag target attribute
-        
-      - name: "Forwarder 2"
-        logo: "https://cdn.jsdelivr.net/gh/vrelk/homer@config/icons/techdns.png"
-        subtitle: "Location: Work"
-        tag: "dns"
-        keywords: "technitium techdns dns"
-        url: "http://192.168.71.17/"
-        target: "_blank"
-
-      - name: "Forwarder 3"
-        logo: "https://cdn.jsdelivr.net/gh/vrelk/homer@config/icons/techdns.png"
-        subtitle: "Location: Home"
-        tag: "dns"
-        keywords: "technitium techdns dns"
-        url: "https://192.168.1.5/"
-        target: "_blank"
-
-      - name: "Open WebUI"
-        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/open-webui.svg"
-        subtitle: "Location: Home"
-        url: "https://openwebui.vrelk.net/"
-
-  - name: "Code"
+      - name: Hidden Master
+        logo: https://cdn.jsdelivr.net/gh/vrelk/homer@config/icons/techdns.png
+        subtitle: 'Location: Work'
+        tag: dns
+        keywords: technitium techdns dns
+        url: http://192.168.71.32/
+        target: _blank
+      - name: Forwarder 2
+        logo: https://cdn.jsdelivr.net/gh/vrelk/homer@config/icons/techdns.png
+        subtitle: 'Location: Work'
+        tag: dns
+        keywords: technitium techdns dns
+        url: http://192.168.71.17/
+        target: _blank
+      - name: Forwarder 3
+        logo: https://cdn.jsdelivr.net/gh/vrelk/homer@config/icons/techdns.png
+        subtitle: 'Location: Home'
+        tag: dns
+        keywords: technitium techdns dns
+        url: https://192.168.1.5/
+        target: _blank
+      - name: Open WebUI
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/open-webui.svg
+        subtitle: 'Location: Home'
+        url: https://openwebui.vrelk.net/
+  - name: Code
     icon: fab fa-git-alt
     items:
-      - name: "Gitea"
+      - name: Gitea
         type: Gitea
-        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/gitea.svg"
-        url: "https://git.vrelk.net"
-
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/gitea.svg
+        url: https://git.vrelk.net
       - name: Gist
-        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/opengist.svg"
-        url: "https://gist.vrelk.net"
-
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/opengist.svg
+        url: https://gist.vrelk.net
       - name: ByteStash
-        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/bytestash.svg"
-        url: "https://stash.vrelk.net"
-
-  - name: "Virtualization"
-    icon: "fas fa-server"
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/bytestash.svg
+        url: https://stash.vrelk.net
+  - name: Virtualization
+    icon: fas fa-server
     items:
-        - name: "Proxmox - Office"
-          logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png"
-          url: "https://192.168.71.5:8006"
-
-        - name: "Proxmox - Office (New)"
-          logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png"
-          url: "https://192.168.71.6:8006"
-          
-        - name: "Proxmox - Home (Old)"
-          logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png"
-          url: "https://192.168.0.3:8006"
-
-        - name: "Proxmox - Home (New)"
-          logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png"
-          url: "https://192.168.1.47:8006"
-          
-        - name: "Proxmox Backup Server"
-          logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png"
-          url: "https://192.168.71.9:8007"
-
-        - name: "Linode"
-          icon: "fab fa-linode"
-          url: "https://login.linode.com/login"
-
-        - name: "Landscape"
-          logo: "https://cdn.jsdelivr.net/gh/vrelk/homer@config/icons/landscape.png"
-          url: "https://landscape.vrelk.net"
-
-        - name: "Jenkins"
-          logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/jenkins.svg"
-          url: "https://jenkins.vrelk.net"
+      - name: Proxmox - Office
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png
+        url: https://192.168.71.5:8006
+      - name: Proxmox - Office (New)
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png
+        url: https://192.168.71.6:8006
+      - name: Proxmox - Home (Old)
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png
+        url: https://192.168.0.3:8006
+      - name: Proxmox - Home (New)
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png
+        url: https://192.168.1.47:8006
+      - name: Proxmox Backup Server
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/proxmox.png
+        url: https://192.168.71.9:8007
+      - name: PatchMon
+        url: https://patchmon.vrelk.net
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/patchmon.svg
+        subtitle: Linux Patch Monitoring
+      - name: Pulse
+        url: https://pulse.vrelk.net/
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/pulse.svg
+        subtitle: Real-time monitoring for Proxmox & Docker
+      - name: Linode
+        icon: fab fa-linode
+        url: https://login.linode.com/login
+      - name: Landscape
+        logo: https://cdn.jsdelivr.net/gh/vrelk/homer@config/icons/landscape.png
+        url: https://landscape.vrelk.net
+      - name: Jenkins
+        logo: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/jenkins.svg
+        url: https://jenkins.vrelk.net
